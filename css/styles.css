@@ -240,6 +240,7 @@ header svg{
     text-transform: uppercase;
     text-align: center;
     padding: 2rem 0;
+    padding-top: 4rem;
     font-weight: bold;
 }
 
@@ -370,34 +371,64 @@ header svg{
 
   .illustrations{
     margin: 2rem;
+    padding-bottom: 4rem;
   }
 
   /* Contact section */
+
+  .c-links{
+    color: #6D676E;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  main a:hover{
+    border-bottom: 1px solid  #6D676E;
+  }
 
   .contact .flex{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem auto;
+    flex-direction: column;
   }
 
-  .contact .flex div{
-    width: 50%;
+  .contact .flex div:first-of-type{
+    max-width: 300px;
+  }
+
+
+  .contact h3{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: rgb(127, 132, 223);
   }
 
   .contact{
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
     font-weight: bold;
-    color: #2f0a80;
-    margin: 0 auto;
+    color: rgb(86, 184, 171);;
+    margin: 8rem auto 0 auto;
+    padding: 6rem 0;
+    background-color: #17171a;
   }
 
   .contact img{
-    width: 40%;
+    width: 20vw;
     border-radius: 1000px;
     padding: 1rem;
-    border: 1px solid #2f0a80;
+    border: 1px solid rgb(127, 132, 223);
+    display: none;
+  }
+
+  footer{
+    background-color: #17171a;
+    padding: 2.5rem;
+    
+    text-align: center;
+    color: rgb(69, 63, 81);
   }
 
 
@@ -464,7 +495,7 @@ header svg{
     .top-nav li:hover,
     .top-nav li:active{
         display: grid;
-        border-bottom: 1px solid #49111C;
+        border-bottom: 1px solid  rgb(127, 132, 223);
     }
 
     .site{
@@ -485,15 +516,24 @@ header svg{
         padding: unset;
     }
 
+    .contact .flex{
+        flex-direction: row;
+    }
+
+    .contact img{
+        display: block;
+    }
+
     .contact{
         flex-direction: row;
-        margin: auto;
-        max-width: 960px;
-        height: 90vh;
     }
 
     .contact > div{
         margin-left: 3rem;
+    }
+
+    .contact .flex div:first-of-type{
+        max-width: 400px;
     }
 
     .collection:last-of-type .art-div img{
