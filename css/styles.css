@@ -65,12 +65,9 @@ h1{
     background-color: #17171a;
 }
 .hero h3{
-    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    color: #fff;
-    font-size: 1.3rem;
-    margin-top: -.3rem;
-    width: 79%;
+    bottom: 2.5rem;
+    right: 0.2rem;
 }
 
 .hero .container div{
@@ -78,14 +75,9 @@ h1{
 }
 
 .hero h3{
-    margin-top: 0.4rem;
     font-weight: bold;
     font-size: 1.5rem;
-    margin-right: 15ch;
-    color: white;
-    margin-bottom: -2rem;
 
-    
 }
 
 header h1 a{
@@ -198,6 +190,10 @@ header svg{
 
 }
 
+.hero h3{
+    left: 38%;
+}
+
 .hero h2{
     transform: translate(-110%, -1000%);
 }
@@ -267,6 +263,10 @@ header svg{
     padding: 20px;
     background-color: #4334d0;
 
+}
+
+.card p{
+    color : rgb(191, 207, 212);
 }
 
 .card .flex-container {
@@ -486,6 +486,7 @@ header svg{
 
     .hero h3{
         margin: unset;
+        bottom: 18%;
     }
 
     .hero .blur-box{
