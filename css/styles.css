@@ -191,11 +191,13 @@ header svg{
 }
 
 .hero h3{
-    left: 38%;
+    left: 39%;
 }
 
 .hero h2{
-    transform: translate(-110%, -1000%);
+    /*transform: translate(-110%, -1000%);*/
+    transform: translate(-32%, -500%);
+    margin: -9ch;
 }
 
 /*About section */
@@ -597,4 +599,14 @@ header svg{
         padding-bottom: 1rem;
     }
 
+  }
+
+  @media screen and (max-width: 450px) {
+    .hero h2,
+    .hero h3{
+        margin-left: 1rem;
+    }
+    .hero h2{
+        transform: translate(-89%, -500%);
+    }
   }
